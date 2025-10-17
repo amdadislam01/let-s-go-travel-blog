@@ -8,10 +8,12 @@ import Blog from "../pages/Blog/Blog";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import PrivetRoutes from "./PrivetRoutes";
+import ErrorPage from "../pages/Error/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: '/',
+        errorElement: <ErrorPage />,
         element: <Layout />,
         children: [
             {

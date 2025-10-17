@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { FaHome } from "react-icons/fa";
 
 const ErrorPage = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-purple-600 via-pink-500 to-purple-700 overflow-hidden">
       {/* Animated blobs */}
@@ -18,18 +19,19 @@ const ErrorPage = () => {
           Oops! Page Not Found 😢
         </h2>
         <p className="text-white/80 max-w-lg mx-auto mb-8 text-lg">
-          Looks like the page you’re looking for doesn’t exist or may have been moved.
-          Don’t worry — let’s get you back to your next adventure!
+          Looks like the page you’re looking for doesn’t exist or may have been
+          moved. Don’t worry — let’s get you back to your next adventure!
         </p>
 
         {/* Go Home Button */}
-        <Link
-          to="/"
-          className="inline-flex items-center gap-3 bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+        <button
+          onClick={()=> navigate(-1)}
+          className="inline-flex items-center gap-3 bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all
+           duration-300 cursor-pointer"
         >
           <FaHome className="text-xl" />
           Back to Home
-        </Link>
+        </button>
       </div>
     </section>
   );

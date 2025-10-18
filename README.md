@@ -6,7 +6,7 @@
 > </br>
 > **Repository:** [https://github.com/amdadislam01/let-s-go-travel-blog](https://github.com/amdadislam01/let-s-go-travel-blog)
 > </br>
-> **Live Demo:** *[Add live demo link if deployed]*
+> **Live Demo:** *[[Add live demo link if deployed](https://letsgo-travel.netlify.app/)]*
 
 ---
 

@@ -47,7 +47,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="bg-gradient-to-b from-purple-50 to-white py-20 px-6 lg:px-12">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-[1580px] mx-auto text-center px-5 sm:px-8 lg:px-10">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
           💬 Traveler <span className="text-purple-600">Testimonials</span>
         </h2>
@@ -84,16 +84,14 @@ const Testimonials = () => {
                 </h3>
                 <p className="text-sm text-gray-500 mb-2">{t.country}</p>
 
-                {/* Rating Stars */}
                 <div className="flex justify-center mb-3 text-yellow-400">
                   {[...Array(t.rating)].map((_, i) => (
                     <FaStar key={i} />
                   ))}
                 </div>
 
-                {/* Quote */}
                 <p className="text-gray-600 italic leading-relaxed">
-                  “{t.quote}”
+                  “{t.quote.slice(0, 100)}”
                 </p>
               </div>
             </SwiperSlide>

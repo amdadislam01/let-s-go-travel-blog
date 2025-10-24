@@ -57,17 +57,14 @@ const features = [
 const WhyChooseUs = () => {
   return (
     <section className="bg-gradient-to-b from-purple-50 to-white py-20 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Title */}
+      <div className="max-w-[1580px] mx-auto text-center px-5 sm:px-8 lg:px-10">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
-          💜 Why Choose <span className="text-purple-600">LET'S~GO?</span>
+           Why Choose <span className="text-purple-600">LET'S~GO?</span>
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-14">
           We believe that traveling should be easy, exciting, and stress-free.
           Here’s why thousands of explorers love booking with us.
         </p>
-
-        {/* Feature Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {features.map((feature) => (
             <div
@@ -86,8 +83,6 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom CTA */}
         <div className="mt-16">
           <Link to={"/contact"}>
             <button className="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">

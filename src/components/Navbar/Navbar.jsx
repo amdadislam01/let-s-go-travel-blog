@@ -16,6 +16,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const { user, logoutUser } = useContext(AuthContext);
+  console.log(user);
+  
 
   const navLinks = [
   { to: "/", label: "Home", icon: <FaHome className="inline mr-2" /> },
@@ -39,7 +41,6 @@ const Navbar = () => {
             </span>
           </NavLink>
 
-          {/* Menu Center */}
           <div className="hidden md:flex items-center gap-2 lg:gap-4">
             {navLinks.map((link) => (
               <NavLink
@@ -60,7 +61,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Right Section */}
           <div className="hidden md:flex items-center relative">
             {!user ? (
               <NavLink
@@ -78,7 +78,6 @@ const Navbar = () => {
                   className="w-10 h-10 rounded-full cursor-pointer border-2 border-purple-500 hover:scale-105 transition-transform"
                 />
 
-                {/* Dropdown */}
                 {showDropdown && (
                   <div className="absolute right-0 mt-3 w-52 bg-white border border-purple-100 shadow-lg rounded-xl overflow-hidden z-50">
                     <div className="px-4 py-3 border-b border-purple-100">
@@ -99,7 +98,6 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
@@ -122,7 +120,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-2 pb-4 animate-fadeIn">
             <div className="space-y-1">

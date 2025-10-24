@@ -37,24 +37,21 @@ const blogs = [
 const Blogs = () => {
   return (
     <section className="bg-white py-20 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Title */}
+      <div className="max-w-[1580px] mx-auto text-center px-5 sm:px-8 lg:px-10">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
-          📰 Latest Blog Posts
+           Latest Blog Posts
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Read the latest travel stories, tips, and guides from explorers around
           the world. Stay inspired and plan your next adventure!
         </p>
 
-        {/* Blog Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {blogs.map((blog) => (
             <div
               key={blog.id}
               className="group bg-white border border-purple-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              {/* Image */}
               <div className="relative">
                 <img
                   src={blog.image}
@@ -63,8 +60,6 @@ const Blogs = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-
-              {/* Content */}
               <div className="p-5 text-left">
                 <h3 className="text-lg font-bold text-gray-800 group-hover:text-purple-700 transition-colors">
                   {blog.title}

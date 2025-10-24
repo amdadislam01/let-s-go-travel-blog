@@ -41,16 +41,15 @@ const photos = [
 const TravelGallery = () => {
   return (
     <section className="bg-gradient-to-b from-white to-purple-50 py-20 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-[1580px] mx-auto text-center px-5 sm:px-8 lg:px-10">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
-          🌍 Travel <span className="text-purple-600">Gallery</span>
+           Travel <span className="text-purple-600">Gallery</span>
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
           Discover stunning destinations captured by our travelers from around
           the world. Let the wanderlust begin!
         </p>
 
-        {/* Swiper */}
         <Swiper
           spaceBetween={30}
           centeredSlides={true}

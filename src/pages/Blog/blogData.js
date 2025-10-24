@@ -1,7 +1,7 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "Top 10 Hidden Gems in Southeast Asia 🌴",
+    title: "Top 10 Hidden Gems in Southeast Asia",
     author: "Emily Carter",
     date: "October 5, 2025",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
@@ -10,7 +10,7 @@ export const blogPosts = [
   },
   {
     id: 2,
-    title: "A Food Lover’s Guide to Italy 🍝",
+    title: "A Food Lover’s Guide to Italy",
     author: "Luca Romano",
     date: "September 20, 2025",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
@@ -19,7 +19,7 @@ export const blogPosts = [
   },
   {
     id: 3,
-    title: "The Ultimate Solo Travel Guide ✈️",
+    title: "The Ultimate Solo Travel Guide",
     author: "Sophia Johnson",
     date: "August 15, 2025",
     image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1",
@@ -28,7 +28,7 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Adventure Awaits: Hiking the Alps 🏔️",
+    title: "Adventure Awaits: Hiking the Alps",
     author: "Daniel Weber",
     date: "July 29, 2025",
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
@@ -37,7 +37,7 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "How to Travel on a Budget Without Missing Out 💰",
+    title: "How to Travel on a Budget Without Missing Out",
     author: "Maya Lee",
     date: "June 10, 2025",
     image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1LyXz3.img?w=768&h=576&m=6",
@@ -55,7 +55,7 @@ export const blogPosts = [
   },
   {
     id: 7,
-    title: "Best Beaches to Visit in 2025 🏖️",
+    title: "Best Beaches to Visit in 2025",
     author: "Isabella Martinez",
     date: "April 18, 2025",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
@@ -64,7 +64,7 @@ export const blogPosts = [
   },
   {
     id: 8,
-    title: "City Breaks: 7 European Capitals to Explore 🏰",
+    title: "City Breaks: 7 European Capitals to Explore",
     author: "Oliver Smith",
     date: "March 30, 2025",
     image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
@@ -73,7 +73,7 @@ export const blogPosts = [
   },
   {
     id: 9,
-    title: "Top National Parks in the USA 🌲",
+    title: "Top National Parks in the USA",
     author: "Hannah Lee",
     date: "March 10, 2025",
     image: "https://travel.usnews.com/images/GettyImages-617574748_1_bB9VFc1.jpg",
@@ -82,7 +82,7 @@ export const blogPosts = [
   },
   {
     id: 10,
-    title: "Romantic Getaways for Couples ❤️",
+    title: "Romantic Getaways for Couples",
     author: "James Brown",
     date: "February 22, 2025",
     image: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef",
@@ -91,7 +91,7 @@ export const blogPosts = [
   },
   {
     id: 11,
-    title: "Backpacking Through South America 🏞️",
+    title: "Backpacking Through South America",
     author: "Sofia Gonzalez",
     date: "January 15, 2025",
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
@@ -100,7 +100,7 @@ export const blogPosts = [
   },
   {
     id: 12,
-    title: "Travel Photography Tips for Beginners 📸",
+    title: "Travel Photography Tips for Beginners",
     author: "Ethan Clark",
     date: "December 28, 2024",
     image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",

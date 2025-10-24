@@ -18,8 +18,7 @@ const Blog = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-        {/* Section Header */}
+      <div className="max-w-[1580px] mx-auto px-5 sm:px-8 lg:px-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-purple-700 mb-2">
             Latest Blog Posts
@@ -27,9 +26,9 @@ const Blog = () => {
           <p className="text-gray-600 text-lg">
             Discover our latest travel stories, tips, and guides.
           </p>
+          <div className="mt-4 w-32 h-1 bg-gradient-to-r from-purple-600 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
-        {/* Blog Grid or Loading */}
         {loading ? (
           <Loading />
         ) : (
@@ -39,23 +38,21 @@ const Blog = () => {
                 key={post.id}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
               >
-                {/* Image */}
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-52 object-cover"
                 />
 
-                {/* Content */}
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    {post.title}
+                    {post.title.slice(0, 42)}
                   </h3>
                   <div className="flex items-center text-gray-500 text-sm mb-3">
                     <span className="mr-3">{post.author}</span> |{" "}
                     <span className="ml-3">{post.date}</span>
                   </div>
-                  <p className="text-gray-700 mb-4 line-clamp-3">{post.description}</p>
+                  <p className="text-gray-700 mb-4 line-clamp-3">{post.description.slice(0, 95)}</p>
 
                   <a
                     href="#"

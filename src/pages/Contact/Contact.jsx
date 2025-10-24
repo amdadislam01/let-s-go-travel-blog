@@ -19,12 +19,10 @@ const Contact = () => {
 
   return (
     <section className="relative py-24 bg-gradient-to-b from-purple-50 via-white to-purple-50 overflow-hidden">
-      {/* Decorative blobs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-300 rounded-full opacity-30 animate-pulse"></div>
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-300 rounded-full opacity-30 animate-pulse"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+      <div className="max-w-[1580px] mx-auto px-5 sm:px-8 lg:px-10 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-purple-700 mb-2 tracking-wide">
             Get in Touch
@@ -35,8 +33,7 @@ const Contact = () => {
           <div className="mt-4 w-36 h-1 bg-gradient-to-r from-purple-600 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Info */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             {[
               {
@@ -70,7 +67,6 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
             className="backdrop-blur-md bg-white/80 p-8 rounded-3xl shadow-2xl space-y-6 border border-purple-200"

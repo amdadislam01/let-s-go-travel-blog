@@ -17,7 +17,6 @@ const Footer = () => {
 
   return (
     <footer className="relative mt-0 bg-gradient-to-b from-purple-800 to-purple-950 text-white overflow-hidden">
-      {/* Top Wave Shape (Dew Design) */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] transform">
         <svg 
           className="relative block w-full h-12 text-white" 
@@ -34,7 +33,6 @@ const Footer = () => {
 
       <div className="pt-16 pb-8 container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
-          {/* About Section */}
           <div className="col-span-1 md:col-span-5">
             <div className="flex items-center mb-5">
               <GiWorld className="text-3xl text-purple-400 mr-2" />
@@ -60,7 +58,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="col-span-1 md:col-span-3 md:pl-4">
             <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">Quick Links</h3>
             <ul className="space-y-2">
@@ -77,7 +74,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Section */}
           <div className="col-span-1 md:col-span-4 md:pl-4">
             <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">Get In Touch</h3>
             <ul className="space-y-4">
@@ -117,7 +113,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="border-t border-purple-500/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">

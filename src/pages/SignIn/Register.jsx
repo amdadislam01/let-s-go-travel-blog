@@ -69,7 +69,7 @@ const Register = () => {
           Create Account ✨
         </h2>
         <form onSubmit={handleRegister} className="space-y-5">
-          {/* Full Name */}
+
           <div>
             <label className="block mb-1 text-gray-600 font-medium">
               Full Name
@@ -86,7 +86,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Email */}
+      
           <div>
             <label className="block mb-1 text-gray-600 font-medium">
               Email
@@ -103,7 +103,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Image URL */}
+   
           <div>
             <label className="block mb-1 text-gray-600 font-medium">
               Profile Image URL
@@ -120,7 +120,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Password */}
+
           <div>
             <label className="block mb-1 text-gray-600 font-medium">
               Password
@@ -144,7 +144,6 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Register Button */}
           <button
             type="submit"
             className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white py-2.5 rounded-lg font-medium hover:opacity-95 hover:shadow-md transition-all"
@@ -152,7 +151,7 @@ const Register = () => {
             <FaUserPlus /> Register
           </button>
 
-          {/* Social Login */}
+
           <div className="flex items-center justify-center gap-3 mt-4">
             <button
               onClick={handleGoogleLogin}
@@ -169,7 +168,7 @@ const Register = () => {
             </button>
           </div>
 
-          {/* Already have account */}
+ 
           <p className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{" "}
             <a

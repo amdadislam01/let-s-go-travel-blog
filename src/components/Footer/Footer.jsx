@@ -31,8 +31,8 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="pt-16 pb-8 container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+      <div className="pt-16 pb-8 max-w-[1580px] mx-auto px-5 sm:px-8 lg:px-10 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-10 mb-12">
           <div className="col-span-1 md:col-span-5">
             <div className="flex items-center mb-5">
               <GiWorld className="text-3xl text-purple-400 mr-2" />
@@ -58,8 +58,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-1 md:col-span-3 md:pl-4">
-            <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">Quick Links</h3>
+          <div className="col-span-1 sm:col-span-6 md:col-span-3 md:pl-4">
+            <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               {['/', '/destinations', '/blog', '/about', '/contact', '/login'].map((path, index) => {
                 const labels = ['Home', 'Destinations', 'Blog', 'About', 'Contact', 'Login'];
@@ -69,13 +71,15 @@ const Footer = () => {
                       <FaChevronRight className="text-xs mr-2 text-purple-400" /> {labels[index]}
                     </Link>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
 
-          <div className="col-span-1 md:col-span-4 md:pl-4">
-            <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">Get In Touch</h3>
+          <div className="col-span-1 sm:col-span-6 md:col-span-4 md:pl-4">
+            <h3 className="text-lg font-bold text-white mb-5 pb-2 border-b border-purple-500/30">
+              Get In Touch
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <div className="bg-purple-600 p-2 rounded-lg mt-1 mr-3 shadow-lg">
@@ -83,7 +87,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h4 className="text-gray-200 text-sm mb-1">Email</h4>
-                  <a href="mailto:info@globalwanderer.com" className="text-gray-300 hover:text-purple-400">
+                  <a href="mailto:info@letsgo.com" className="text-gray-300 hover:text-purple-400">
                     info@letsgo.com
                   </a>
                 </div>
@@ -114,25 +118,28 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-purple-500/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {currentYear} <span className="text-purple-400">LET'S~GO</span>. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center md:justify-end space-x-4 mt-4 md:mt-0">
+            <div className="flex flex-wrap justify-center md:justify-end space-x-4">
               {['/terms', '/privacy', '/faq', '/contact'].map((path, index) => {
                 const labels = ['Terms', 'Privacy', 'FAQ', 'Contact'];
                 return (
                   <Link key={index} to={path} className="text-gray-400 text-sm hover:text-purple-400">
                     {labels[index]}
                   </Link>
-                )
+                );
               })}
             </div>
           </div>
 
           <div className="text-center mt-6 text-xs text-gray-400">
             Developed with <span className="text-purple-400">♥</span> by{" "}
-            <a href="https://amdadislam-01.netlify.app/" className="underline text-purple-400 hover:text-purple-300">
+            <a 
+              href="https://amdadislam-01.netlify.app/" 
+              className="underline text-purple-400 hover:text-purple-300"
+            >
               MD Amdad Islam
             </a>
           </div>

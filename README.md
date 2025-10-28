@@ -1,4 +1,4 @@
-# Let’s Go Travel Blog
+# Let’s Go Travel Blog Site
 
 > **Project:** Let’s Go Travel Blog (Frontend)
 > </br>
